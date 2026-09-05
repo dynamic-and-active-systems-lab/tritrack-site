@@ -1,0 +1,44 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>Getting your data out · TriTrack</title><meta name=description content="Exporting observations as a spreadsheet, and taking a backup file off the phone."><link rel=stylesheet href=/tritrack-site/style.css></head><body><header class=site><a class=brand href=/tritrack-site/>TriTrack</a><nav><a href=/tritrack-site/docs/>Guide</a><a href=/tritrack-site/support/>Support</a><a href=/tritrack-site/privacy/>Privacy</a></nav></header><main><article class=prose><h1>Getting your data out</h1><p>Two ways out, for two different jobs. A spreadsheet is for analysis. A backup
+file is for moving a whole project, or for making sure a phone is not the only
+place your season exists.</p><div class=shots><figure class=shot><img src=/tritrack-site/screens/iphone-6.9/more.png alt="Data Export / Backup is on the More tab, near the bottom." loading=lazy><figcaption>Data Export / Backup is on the More tab, near the bottom.</figcaption></figure><figure class=shot><img src=/tritrack-site/screens/iphone-6.9/data-export.png alt="Both exports on one screen. The backup is the whole project; the spreadsheet is filtered by tag or by date." loading=lazy><figcaption>Both exports on one screen. The backup is the whole project; the spreadsheet is filtered by tag or by date.</figcaption></figure></div><p>Open <b class=app-string>More</b>
+, then <b class=app-string>Data Export / Backup</b>
+.</p><h2 id=a-spreadsheet-of-your-observations>A spreadsheet of your observations</h2><p>Set the two filters if you want a slice — one tag, or a date range — and tap
+<b class=app-string>Export CSV</b>
+. The phone then asks where to put the file, which on
+iOS means anywhere the Files app can reach: iCloud Drive, a folder on the device,
+a connected drive.</p><p>You get one row per bearing and one column per field. Alongside the obvious ones
+— time, latitude, longitude, the magnetic and true-north bearings, the
+uncertainty, the signal quality, your notes — there are two worth knowing about:</p><ul><li><em>The tag columns come in pairs.</em> One pair is what the collar was called and
+tuned to when you took that bearing; the other is what it is called and tuned
+to today. They are separate columns on purpose. If somebody re-tuned a collar
+mid-season, that is a fact about the season and collapsing the two would hide
+it. A further column says whether that bearing knows what it was recorded
+against — some older records do not, and their recorded-value cells are left
+empty rather than filled in with today&rsquo;s numbers, because an empty cell is
+honest and a filled one would be a measurement nobody took.</li><li><em>Every row names the observer.</em> Records that came from teammates keep their
+name on them.</li></ul><p>The export writes more than one file when the project holds more than one kind of
+record — a second file for the times somebody listened and heard nothing, and a
+third for places somebody went and physically found the animal or the collar.
+Those last are <a href=../truth-points/>truth points</a>, and their file is the one to
+reach for when you want to know how good the position estimates actually were;
+that page lists what is in its columns. The message at the end names every kind
+it wrote, so if you were expecting one and it is not mentioned, the answer is
+that there were none of that kind rather than that something failed.</p><p><em>Any role can export.</em> A viewer can take the same spreadsheet as an owner. The
+role controls what somebody can change, not what they can read or copy.</p><h2 id=a-backup-of-the-whole-project>A backup of the whole project</h2><p><b class=app-string>Export project backup (.zip)</b>
+writes one file holding everything in
+the project — the records, the tags, the people, the map extent. It is small,
+usually a couple of hundred kilobytes, and it goes wherever you send it: a
+message, an email, cloud storage, a memory stick.</p><p><b class=app-string>Import backup</b>
+reads one back in. It adds to and corrects the
+project rather than replacing it, and if anything in the file would overwrite
+something you already have, the app lists exactly what — field by field, old
+value and new — and waits for you to say yes. You can only restore into a project
+you are allowed to change.</p><p>This is the answer to a broken phone. A project that has synced is already on the
+server; a project that has not is on that phone and nowhere else.</p><h2 id=the-one-habit-worth-having>The one habit worth having</h2><p>Records that have never synced exist in exactly one place. If you are working out
+of signal for days, take a backup file off the phone every few days and put it
+somewhere else. It takes about fifteen seconds and it is the difference between a
+dropped phone costing you an afternoon and costing you a field season.</p><p>The <a href=../sync/>sync</a> page explains how to see how many records are in that
+position: the number on the bar.</p><h2 id=on-a-mac>On a Mac</h2><p>The same screen and the same two buttons, and the file dialog is the ordinary
+macOS one. Doing the export on a Mac is often easier if the file is going
+straight into an analysis — it lands in a folder you can already see. There are
+no desktop pictures in this guide yet.</p></article></main><footer class=site><p>TriTrack — radio-telemetry field data collection.</p></footer></body></html>

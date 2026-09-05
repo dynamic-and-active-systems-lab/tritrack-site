@@ -1,0 +1,125 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>Truth points · TriTrack</title><meta name=description content="Recording where the animal or the collar actually turned out to be, correcting one afterwards, and what comes out in the export."><link rel=stylesheet href=/tritrack-site/style.css></head><body><header class=site><a class=brand href=/tritrack-site/>TriTrack</a><nav><a href=/tritrack-site/docs/>Guide</a><a href=/tritrack-site/support/>Support</a><a href=/tritrack-site/privacy/>Privacy</a></nav></header><main><article class=prose><h1>Truth points</h1><p>A truth point is the record of a place somebody physically went to and found
+the animal, the collar, or both. It is the only record in TriTrack that says
+where something <em>actually</em> was rather than where the radio suggested it was.</p><p>That is what makes it worth the two minutes it takes. Everything else the app
+produces is an inference from bearings; a truth point is the thing you check
+those inferences against — how far out was the estimate, and was it out in a
+way that says something about the terrain, the antenna or the observer.</p><p><em>A truth point never feeds a position estimate.</em> It cannot: TriTrack keeps
+these records in a different place from bearings, so no calculation can pick
+one up by accident. If a truth point could reach the solver, the solver would
+be marking its own homework.</p><h2 id=recording-one>Recording one</h2><figure class=shot><img src=/tritrack-site/screens/iphone-6.9/record-truth.png alt="The record screen with the Truth tab chosen. What was found and the precision are the two fields that decide what the point means." loading=lazy><figcaption>The record screen with the Truth tab chosen. What was found and the precision are the two fields that decide what the point means.</figcaption></figure><p>Go to the Record tab and pick <b class=app-string>Truth</b>
+on the record-type row, then
+choose the collar on the wheel below it. Two fields then matter more than
+anything else on the screen.</p><p><em><b class=app-string>WHAT WAS FOUND</b>
+.</em> Three choices, and they are not
+interchangeable: <b class=app-string>Animal + collar</b>
+,
+<b class=app-string>Animal only</b>
+and <b class=app-string>Collar only</b>
+. The app says why on the
+screen — <b class=app-string>A collar on its own may have been shed.</b>
+— and the
+consequence is that only an animal-and-collar point tells you anything about
+where a live collared animal was. A shed collar in a sagebrush is a fact about
+the collar.</p><p><em><b class=app-string>PRECISION</b>
+.</em> A radius in metres: how closely you know the spot.
+This is the one field a truth point cannot be saved without, and the
+<b class=app-string>SAVE TRUTH POINT</b>
+button stays greyed out until it has a number
+greater than zero in it. A coordinate with no error bar is not a yardstick.</p><p>When the phone has a fix, the app fills the precision in for you from the
+phone&rsquo;s own reported accuracy and says so, adding
+<b class=app-string>Raise or lower it if you know better.</b>
+— and in the field you very
+often do. A phone claiming ±12 m while you are standing over the transmitter
+with the collar in your hand is the normal case, not the odd one. Type over it.</p><p><em>If you place the position by hand on the map instead, nothing is prefilled</em>,
+and the app explains that too:
+<b class=app-string>Not prefilled for a map pin: a pin is only as precise as your ability to identify the exact spot, and the imagery itself is commonly off by a few metres.</b>
+A pin&rsquo;s precision is your map-reading, not the phone&rsquo;s GPS, so the app refuses
+to put a measured-looking number in a box that did not come from a measurement.</p><p>Notes are optional and are the place for what you actually saw —
+<b class=app-string>Notes (optional) — e.g. found in burrow</b>
+. The position row at the
+bottom behaves exactly as it does for a bearing, including
+<b class=app-string>Preview / set position on map</b>
+for dropping the pin somewhere you
+can point at but were not standing on. That case is common with a truth point:
+nobody walks into the middle of a pride to get a GPS fix on a lion.</p><h2 id=where-they-turn-up-afterwards>Where they turn up afterwards</h2><p><em>On the map.</em> A truth point is a small square outline in the collar&rsquo;s colour,
+with the collar&rsquo;s name and frequency beside it. Tapping it opens the panel
+below.</p><p><em>In the Log.</em> Open <b class=app-string>More</b>
+, then <b class=app-string>Log</b>
+. A truth-point row
+starts with <b class=app-string>📍 Truth point · </b>and the collar, and carries what was
+found, the precision, who found it and how the position was got, all on the row
+rather than behind a tap.</p><p><em>In the export.</em> A file of its own. See <a href=../getting-your-data-out/>getting your data
+out</a>.</p><h2 id=the-panel-on-the-map>The panel on the map</h2><figure class=shot><img src=/tritrack-site/screens/iphone-6.9/truth-point-panel.png alt="Tapping a truth point on the map. Everything that decides whether the point can be used is on the panel: what was found, the precision, how the position was got, and who found it." loading=lazy><figcaption>Tapping a truth point on the map. Everything that decides whether the point can be used is on the panel: what was found, the precision, how the position was got, and who found it.</figcaption></figure><p>Under the date and the coordinate, three lines, and each answers a question
+somebody looking at a dot on a map actually has.</p><ul><li><em>What was found and the precision</em>, together, because they only mean anything
+together. Animal-and-collar to ±3 m and a shed collar to ±40 m are different
+facts and used to render identically.</li><li><em><b class=app-string>Position: </b></em>— how the coordinate was got. Four possible
+answers: <b class=app-string>GPS fix</b>
+, <b class=app-string>Placed by hand on the map</b>
+,
+<b class=app-string>Entered by hand</b>
+, and
+<b class=app-string>GPS fix, later moved by hand</b>
+. The last one exists because it is
+genuinely a third thing: calling it a plain fix would claim the phone put it
+there, and calling it a plain pin would throw away that it started as a
+measurement.</li><li><em><b class=app-string>Found by: </b></em>— the person who recorded it. Not whoever last
+corrected it; see below.</li></ul><p>A point recorded before the app stored these things reads
+<b class=app-string>not recorded</b>
+rather than going blank. That is deliberate: a blank
+is a gap a reader fills in themselves, and the wrong fill-in here — assuming a
+GPS fix, or assuming animal-and-collar — is the one that would let an unverified
+point count towards an accuracy figure.</p><p><b class=app-string>Navigate</b>
+on the same panel points the Compass tab at the truth
+point, with the distance to it, so you can walk back to a spot somebody else
+found.</p><h2 id=correcting-one>Correcting one</h2><p><em>Until the end of August 2026 a truth point&rsquo;s position could not be changed at
+all.</em> It can now, and anything you read anywhere else that says otherwise is
+out of date.</p><figure class=shot><img src=/tritrack-site/screens/iphone-6.9/truth-point-edit.png alt="Correcting a truth point. The position, the precision and what was found can all be changed; who found it and when cannot." loading=lazy><figcaption>Correcting a truth point. The position, the precision and what was found can all be changed; who found it and when cannot.</figcaption></figure><p>There are two ways to open this.</p><ul><li><em>From the map.</em> Tap the point, then <b class=app-string>Edit</b>
+on the panel.</li><li><em>From the Log.</em> The controls on every row live behind the three-dot button at
+its right-hand end, a truth point&rsquo;s and a bearing&rsquo;s alike. The entry reads
+<b class=app-string>Edit position / precision / what was found…</b>
+.</li></ul><p>Three things are editable.</p><ul><li><em>The position.</em> <b class=app-string>Move on map…</b>
+opens the same map picker the
+record screen uses, and you drag the pin. The case this exists for is the one
+above: the position recorded was a place <em>near</em> the animal, because you were
+in a vehicle or on the far side of a fence, and re-recording it from your desk
+a week later would not improve it.</li><li><em>The precision.</em> The field opens focused, because it is the one that gets
+corrected most. If you have moved the pin the app changes what it says about
+the number, telling you the figure was recorded for where the point used to be
+— the old radius described the old spot and is not a claim about the new one.</li><li><em>What was found.</em> Same three choices as when you recorded it.</li></ul><p>Moving the pin also changes the position line, on its own: a fix you nudge
+becomes <b class=app-string>GPS fix, later moved by hand</b>
+, and a point that never
+recorded how its position was got becomes an ordinary hand-placed pin rather
+than claiming to refine a measurement nobody made.</p><p>Two things are not editable, and both are deliberate.</p><ul><li><em>Who found it.</em> Correcting somebody&rsquo;s precision figure does not make you the
+person who walked in and found the collar. Your name is still recorded against
+the change — it is simply a different fact from the one on the
+<b class=app-string>Found by: </b>line.</li><li><em>When.</em> The same line the app draws everywhere: when a record was taken is
+something you re-record, not something you correct.</li></ul><h2 id=who-is-allowed-to>Who is allowed to</h2><p>Anyone who can write to the project — a contributor or an owner — can correct or
+delete <em>any</em> truth point, not only their own. That is a deliberate difference
+from a bearing, which only its author may edit: a truth point has no author to
+defer to in the way a bearing&rsquo;s reading does, and a wrong precision figure on
+somebody else&rsquo;s point still spoils everybody&rsquo;s accuracy check.</p><p>A viewer cannot, and the app says which it is rather than failing quietly:
+<b class=app-string>Viewers cannot change or delete a truth point — ask an owner to change your role.</b>
+The <a href=../projects-members-and-roles/>roles</a> page has the rest of that picture.</p><h2 id=deleting-one>Deleting one</h2><p><b class=app-string>Delete</b>
+sits next to <b class=app-string>Edit</b>
+on the map panel, and is
+the second entry in the Log row&rsquo;s menu. It asks first, and the question is worth
+reading: <b class=app-string>This is a record of where the animal or collar was actually found — it cannot be re-measured from your desk.</b></p><p>The confirmation that follows carries an undo, and it is a real undo rather than
+a fresh record — the same point comes back, with its identity, its finder and
+its history intact. Once you have moved on, the point is gone from the map, the
+Log and the export, on your device and on everybody else&rsquo;s once they sync.</p><h2 id=what-comes-out-in-the-export>What comes out in the export</h2><p>A project with truth points in it exports <em>three</em> spreadsheets rather than one:
+the bearings, the no-signal records, and a truth-point file whose name ends in
+<code>_truthpoints.csv</code>. The message at the end of the export names each kind it
+wrote, so a kind that is not mentioned means there were none of it rather than
+that something failed.</p><p>The truth-point file has one row per point. Beyond time, latitude and longitude,
+the columns worth knowing about are:</p><ul><li><code>found_kind</code> — <code>animal_and_collar</code>, <code>animal_only</code> or <code>collar_only</code>. This is
+the column that decides what the row means, and it is the first thing to
+filter on before computing anything.</li><li><code>precision_m</code> — the radius, never empty, because a point cannot be saved
+without one.</li><li><code>position_source</code> — <code>gps_fix</code>, <code>manual_pin</code>, <code>gps_fix_adjusted</code> or
+<code>manual_entry</code>. Empty only for a point recorded before the app stored it. If
+you are scoring estimates against these points, this is the column that tells
+you which of them are measurements and which are somebody&rsquo;s best reading of a
+map.</li><li><code>found_by</code> — the person, by name. Empty means no finder was ever recorded, and
+it is never filled in from whoever last edited the row.</li><li>The tag columns come in pairs, exactly as they do for bearings: what the
+collar was called and tuned to when the point was taken, and what it is called
+and tuned to now.</li></ul><p>Full details of the export screen itself, including the backup file, are on
+<a href=../getting-your-data-out/>getting your data out</a>.</p></article></main><footer class=site><p>TriTrack — radio-telemetry field data collection.</p></footer></body></html>

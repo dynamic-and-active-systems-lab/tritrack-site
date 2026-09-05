@@ -1,0 +1,91 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>Recording a bearing · TriTrack</title><meta name=description content="The core of the app: point the antenna, take the bearing, save it."><link rel=stylesheet href=/tritrack-site/style.css></head><body><header class=site><a class=brand href=/tritrack-site/>TriTrack</a><nav><a href=/tritrack-site/docs/>Guide</a><a href=/tritrack-site/support/>Support</a><a href=/tritrack-site/privacy/>Privacy</a></nav></header><main><article class=prose><h1>Recording a bearing</h1><p>This is the thing you will do a hundred times a day. Pick the animal, point the
+antenna, capture the direction, save.</p><figure class=shot><img src=/tritrack-site/screens/iphone-6.9/record.png alt="The record screen, ready to take a directional bearing on the collar called Juniper." loading=lazy><figcaption>The record screen, ready to take a directional bearing on the collar called Juniper.</figcaption></figure><p><em>These two screenshots are of a device with no project server set up, which is
+why there is no coloured bar across the top. Once a device is syncing there is
+one; the <a href=../sync/>sync</a> page explains what it says.</em></p><h2 id=choose-what-kind-of-record-this-is>Choose what kind of record this is</h2><p>The row along the top picks it. <b class=app-string>Directional</b>
+is a bearing on one
+animal and it is what the rest of this page is about. The others, briefly:</p><ul><li><b class=app-string>Omni</b>
+— you heard the animal on an omnidirectional antenna but got
+no direction from it.</li><li><b class=app-string>Note</b>
+— something worth writing down at this place and time that
+is not a detection at all.</li><li><b class=app-string>No Signal</b>
+— you listened for these frequencies here and heard
+nothing. It is a real result, not a blank, and it is worth recording: a search
+that found nothing is evidence about where the animal was not.</li><li><b class=app-string>Truth</b>
+— you physically found the animal or the collar, and this
+is where it actually was. It is a different kind of record from all the others
+and it has <a href=../truth-points/>a page of its own</a>.</li></ul><h2 id=pick-the-tag>Pick the tag</h2><p>The wheel under it lists the tags in this project, by frequency, pulse rate and
+name. Spin it to the one you are listening to.</p><p>If the collar you are on is not in the list, <b class=app-string>+ Quick-add tag</b>
+at the
+bottom of the wheel adds it there and then with just a name and a frequency, so
+you are not stopped in the field. A viewer cannot do that and the app says so
+rather than failing quietly: <b class=app-string>Viewers cannot create tags</b>
+.</p><h2 id=take-the-bearing>Take the bearing</h2><p>Point the antenna. The number under <b class=app-string>BEARING</b>
+is the phone&rsquo;s live
+magnetic heading. Then one of two buttons:</p><ul><li><b class=app-string>POINT</b>
+— tap once when the signal is strongest. It latches that
+heading. Tapping it again clears it and lets you start over.</li><li><b class=app-string>RANGE</b>
+— hold it down while you sweep from one edge of the signal
+to the other, and let go. TriTrack takes the middle of the sweep as the bearing
+and the width of the sweep as how well you know it. Use this when the peak is
+broad, which is most of the time on a strong signal.</li></ul><p>Range is the more honest of the two on a broad peak, because it records your
+uncertainty instead of hiding it. A point tap assumes a fixed uncertainty.</p><p>The pencil beside the number opens a sheet for typing a bearing in by hand — for
+a reading off a hand compass, or a bearing you wrote in a notebook and are
+entering later. On a device with no compass at all, that button is labelled
+<b class=app-string>Manual entry</b>
+instead, and the screen says
+<b class=app-string>No compass on this device — enter the bearing manually above.</b></p><p><em>Bearings are magnetic.</em> The compass tab is where true north and declination
+live, and the <a href=#the-compass-tab>next section</a> is about that.</p><h2 id=say-how-good-it-was>Say how good it was</h2><p>Three quick pickers under the bearing: <b class=app-string>BEARING QUALITY</b>
+,
+<b class=app-string>PULSE TYPE</b>
+and <b class=app-string>SIGNAL STRENGTH</b>
+. They take one tap
+each and they are worth the tap — six weeks later, a bearing marked as a weak,
+irregular signal is the one you will want to know about when two rays disagree.</p><p><b class=app-string>Advanced</b>
+holds the bearing method, the antenna type and the
+receiver gain, folded away because most people set them once for a season and
+never touch them again.</p><p><b class=app-string>Notes (optional)</b>
+is free text for anything else.</p><h2 id=where-you-were>Where you were</h2><p>Under the notes, the app shows the position it is going to attach to the record.
+It uses the phone&rsquo;s GPS. If the fix has not arrived yet it says so, and
+<b class=app-string>Preview / set position on map</b>
+lets you check it on the map, or drop
+the pin by hand if you know better than the phone does — under a canyon wall, for
+instance, or when you took the bearing from a spot you can point at on a map.</p><p><em>The position in the picture above is the invented study area these screenshots
+are generated in, and the number after it is how accurate the phone says that
+fix is. On your phone it will be wherever you are standing.</em></p><h2 id=save-it>Save it</h2><p><b class=app-string>SAVE OBSERVATION</b>
+at the bottom. For a directional record it stays
+greyed out until you have actually captured a bearing, so a greyed button means
+the bearing has not been taken yet rather than something being broken. (That is
+also why it is grey in the picture above.)</p><p>If the phone has no position when you save, it does not save a guess — it says
+<b class=app-string>No GPS fix yet — use manual pin instead.</b>
+and waits for you to place
+the pin.</p><p>You do not have to finish in one go. The line above the button says
+<b class=app-string>Draft autosaves</b>
+, and it means it: leave the screen, take a phone
+call, come back, and what you had typed is still there.</p><p>Saving puts the record on this device. Getting it to your teammates is
+<a href=../sync/>sync</a>, and it happens on its own when there is a connection. Nothing
+you record depends on having one.</p><h2 id=the-compass-tab>The compass tab</h2><figure class=shot><img src=/tritrack-site/screens/iphone-6.9/compass.png alt="The compass tab. The bubble at the top right turns green when the phone is level; a tilted phone gives a bad bearing." loading=lazy><figcaption>The compass tab. The bubble at the top right turns green when the phone is level; a tilted phone gives a bad bearing.</figcaption></figure><p>The dial is for pointing, not for recording — as the screen itself says,
+<b class=app-string>To capture and save a bearing, use the Record tab.</b></p><p><em>The heading in this picture is invented.</em> The screenshots are generated on a
+simulator, which has no magnetometer, so the app is fed a constant 47 degrees.
+The dial, the level bubble and the declination arithmetic are the real app;
+only the number is made up. Do not read anything into it.</p><p>Two things on this screen matter in the field:</p><ul><li><em>The level bubble.</em> <b class=app-string>LEVEL</b>
+at the top right goes green when the
+phone is flat enough. A tilted phone reads a heading that is wrong by more than
+you would guess, and this is the cheapest way to avoid it.</li><li><em><b class=app-string>True North</b>
+and <b class=app-string>Declination</b>
+.</em> The app works out the
+declination from where you are, so it needs a position fix before it can show a
+true-north heading; until one arrives both read as a dash. The picture above
+has one, so it shows both — and because the magnetic heading in it is invented,
+the true-north figure worked out from it is invented too. The declination is
+the real value for the invented study area, not for wherever you are.
+<b class=app-string>Adjust</b>
+lets you type a declination in yourself if you have a
+reason to override it — a published value for the study area, or matching an
+older dataset. Bearings are stored as magnetic either way, so changing this
+does not rewrite anything you have already recorded.</li></ul><p><b class=app-string>⟲ Calibrate (figure-8)</b>
+is the usual phone-compass fix: wave the
+phone in a figure of eight. Do it if the heading is drifting or the app warns
+about interference — near a truck, a metal gate, or a radio.</p><h2 id=on-a-mac>On a Mac</h2><p>A Mac has no compass, so the bearing is typed in rather than captured, and the
+record screen offers <b class=app-string>Manual entry</b>
+. Everything else is the same.
+There are no desktop pictures in this guide yet.</p></article></main><footer class=site><p>TriTrack — radio-telemetry field data collection.</p></footer></body></html>

@@ -1,0 +1,107 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>Sync · TriTrack</title><meta name=description content="What the bar at the top means, what the frequency setting really does, and what a failure looks like."><link rel=stylesheet href=/tritrack-site/style.css></head><body><header class=site><a class=brand href=/tritrack-site/>TriTrack</a><nav><a href=/tritrack-site/docs/>Guide</a><a href=/tritrack-site/support/>Support</a><a href=/tritrack-site/privacy/>Privacy</a></nav></header><main><article class=prose><h1>Sync</h1><p>TriTrack records everything on the device first. Sync is what gets it to the
+server and to your teammates, and gets theirs to you. Nothing you do in the field
+waits for it.</p><h2 id=tritrack-works-with-no-server-at-all>TriTrack works with no server at all</h2><p>If you never set up a server connection, the app is complete: projects, tags,
+bearings, position estimates, the map, exports. There is no bar across the top,
+nothing tries to reach the network, and nothing nags you about it. A one-person
+season on one phone is a supported way to use this app, not a degraded one.</p><p>Everything on this page applies once a device has been pointed at a project
+server and somebody has signed in.</p><h2 id=the-bar>The bar</h2><figure class=shot><img src=/tritrack-site/screens/iphone-6.9/joined-sync-bar.png alt="The sync bar sits above whatever screen you are on. This is the healthy state: it synced on that date, and 24 records made since then are still waiting." loading=lazy><figcaption>The sync bar sits above whatever screen you are on. This is the healthy state: it synced on that date, and 24 records made since then are still waiting.</figcaption></figure><p>It is on every screen, it is one line, and tapping it opens
+<b class=app-string>Sync Status</b>
+.</p><p>In normal use it tells you two things: when this device last managed a sync, and
+how many records it is still holding. Records waiting is not a problem — it is
+the ordinary state of a phone that has been out of signal — and the number going
+down is what a successful sync looks like.</p><h2 id=the-sync-screen>The sync screen</h2><figure class=shot><img src=/tritrack-site/screens/iphone-6.9/joined-sync-status.png alt="Sync Status. The button syncs now; the four choices under it decide when the app is allowed to sync by itself." loading=lazy><figcaption>Sync Status. The button syncs now; the four choices under it decide when the app is allowed to sync by itself.</figcaption></figure><p><b class=app-string>Sync now</b>
+does it immediately and ignores every setting below. This
+is the button for the moment you reach the trailhead and want the day&rsquo;s work off
+the phone before a long drive.</p><h2 id=when-it-syncs-by-itself>When it syncs by itself</h2><p>Four choices, and the sentence under them is the one that matters:</p><b class=app-string>TriTrack syncs while the app is open. It does not sync in the background — while the app is closed, nothing syncs at any of these settings.</b><p>So none of these is a timer. They set <em>how long since the last attempt</em> counts as
+due when you next open the app.</p><ul><li><b class=app-string>Every time I open it</b>
+— a round trip every time you come back to
+the app. Most current, most battery and data. Good when you are working beside
+a colleague on wi-fi and want each other&rsquo;s bearings now.</li><li><b class=app-string>Every 15 minutes</b>
+— the default and the one to leave alone.</li><li><b class=app-string>Hourly</b>
+— fewer round trips, for a metered or satellite plan.</li><li><b class=app-string>Only when I ask</b>
+— nothing syncs on its own at all. Your records
+stay on the device until you tap <b class=app-string>Sync now</b>
+.</li></ul><p><em>What <b class=app-string>Only when I ask</b>
+changes, beyond the obvious.</em> The bar starts
+naming the setting: instead of just saying how many records are waiting, it says
+they are waiting because sync is set to only when you ask. That is deliberate —
+a count of waiting records with nothing about to happen to them is how somebody
+ends up watching a number that is never going to move.</p><p><em>One thing to know before you leave the default alone.</em> Automatic sync uses
+whatever connection the phone has, cellular included. There is no wi-fi-only
+setting yet. On a metered or satellite plan, choose
+<b class=app-string>Only when I ask</b>
+and sync deliberately.</p><h2 id=what-a-failure-looks-like>What a failure looks like</h2><p>The bar changes colour and words. It never goes silent, and it never asks you to
+do something you cannot do.</p><h3 id=offline>Offline</h3><figure class=shot><img src=/tritrack-site/screens/iphone-6.9/sync-offline.png alt="Offline — last synced just now. Grey, and calm on purpose: this is the ordinary condition of a phone with no signal, not a fault." loading=lazy><figcaption>Offline — last synced just now. Grey, and calm on purpose: this is the ordinary condition of a phone with no signal, not a fault.</figcaption></figure><p><em>Not a failure.</em> It is the ordinary condition of a phone in a canyon, and the bar
+deliberately does not shout about it — <b class=app-string>Offline — last synced</b>
+, and
+the date. Everything you record keeps going onto the device. The next round that
+reaches the server takes it all.</p><h3 id=records-the-server-would-not-accept>Records the server would not accept</h3><figure class=shot><img src=/tritrack-site/screens/iphone-6.9/sync-records-held.png alt="1 record isn't on the server. Tap to see why. Red: the server refused something this device sent." loading=lazy><figcaption>1 record isn't on the server. Tap to see why. Red: the server refused something this device sent.</figcaption></figure><p><em>Red, with a number of records refused.</em> The server would not take some of what
+this device sent. <em>They are still on the device and they are safe</em> — the sync
+screen says so before it says anything else: <b class=app-string>These records are safe on this device and nothing has been lost.</b></p><p>Tap the bar. Under <b class=app-string>Waiting to sync</b>
+each refused record gets its own
+card saying which record it is, why it is waiting, and whether there is anything
+for you to do.</p><p><em>Read the card rather than this page.</em> What it says depends on how much the
+server explained, and the app is careful about the difference: when the server
+named the part of the record it objected to, the card names it too; when it did
+not, the card says so plainly instead of guessing, and it never tells you there
+is nothing you can do. That wording is being worked on, so this page describes
+the behaviour rather than reciting the sentence.</p><p>The remedy on the card is worth knowing in advance, because it is the one that
+usually works: <em>look over what the record contains</em>, because
+<b class=app-string>text pasted in from somewhere else can carry hidden characters the server will not store</b>
+.
+Retype the name or label by hand, save, and tap <b class=app-string>Try again</b>
+— an
+edited record goes back on the wire by itself.</p><p><em>The likeliest reason you will actually see this, and it is fixable in ten
+seconds:</em> a character in your own name that the server will not store. That is
+the next section.</p><h3 id=records-the-server-sent-that-this-app-could-not-read>Records the server sent that this app could not read</h3><figure class=shot><img src=/tritrack-site/screens/iphone-6.9/sync-records-missing.png alt="1 record the server sent could not be read by this app. Tap to see why. Amber: something arrived that this build does not understand." loading=lazy><figcaption>1 record the server sent could not be read by this app. Tap to see why. Amber: something arrived that this build does not understand.</figcaption></figure><p><em>Amber, and it says records did not arrive.</em> A teammate on a newer version of
+the app wrote something this copy has never heard of — <b class=app-string>the server sent could not be read by this app.</b></p><p><em>Nothing has been lost.</em> Those records are safe on the server and on the phone
+that wrote them. Syncing again will not fix it on its own: update the app, and
+each of them arrives the next time it changes on the device that wrote it. The
+sync screen names which records and why.</p><h3 id=you-are-no-longer-on-this-project>You are no longer on this project</h3><figure class=shot><img src=/tritrack-site/screens/iphone-6.9/sync-removed.png alt="You're no longer on this project, so it has stopped syncing. Grey, and calm: this is somebody's decision, not a fault." loading=lazy><figcaption>You're no longer on this project, so it has stopped syncing. Grey, and calm: this is somebody's decision, not a fault.</figcaption></figure><p><em>Grey, and it says you are no longer on this project.</em>
+<b class=app-string>You're no longer on this project, so it has stopped syncing.</b>
+An
+owner removed you, or you left. <em>Nothing has gone wrong</em> — that is why it is grey
+and not red. Everything already on the device stays and keeps working offline.
+See <a href=../projects-members-and-roles/>projects, members and roles</a>.</p><h3 id=the-other-three-you-might-see>The other three you might see</h3><p><em>Amber, and it says the server is refusing access.</em> Usually the same thing as
+above — but this device cannot confirm it, because the update that would say so
+is the thing being refused. If you expected to still be on the project, ask an
+owner.</p><p><em>Amber, and it says you are signed out.</em> Tap it and sign in again. Nothing is
+lost while you are signed out; records keep piling up on the device and go when
+you are back.</p><p><em>Red, and it says sync is not working.</em> Repeated failures with no more specific
+cause. If it persists, whoever runs your project server is the person to ask.</p><p>In every one of these the records on your device stay on your device. A failed
+sync has never lost anybody&rsquo;s data; it just has not moved it yet.</p><h2 id=what-the-app-will-accept-as-your-name>What the app will accept as your name</h2><p>This is the one refusal most people will meet, and it is worth knowing before it
+happens rather than after.</p><p>Your first and last name go onto every record you take, and they travel to your
+teammates&rsquo; devices. The app and the server agree on a short list of what a name
+may be made of, and <em>anything not on the list is refused</em> — not narrowed down
+from a list of banned characters, but allowed from a list of permitted ones. The
+list is:</p><ul><li>letters and the marks that go with them, <em>in every writing system</em> — Latin,
+Cyrillic, Arabic, Devanagari, Han. Accents, tone marks and the rest are part of
+the letter, so <code>Đặng Thị</code> and <code>Fernández</code> are ordinary names here.</li><li>digits, for <code>Bill Gates 3rd</code></li><li>hyphens and dashes of every kind</li><li>spaces of every kind, including the wide space Japanese uses between words</li><li>apostrophes, for <code>O'Brien</code>, both the straight one and the curly one a phone
+keyboard produces</li><li>full stops and commas, for <code>J. R. Smith</code> and <code>Smith, Jr.</code></li><li>the middle dot, which is how Japanese writes a foreign name: <code>ジョン・スミス</code></li></ul><p>Everything else is refused, and the list of what that includes is short and
+surprising: at-signs, brackets, slashes, emoji. <code>Dana Reyes (PhD)</code> is not a name
+this app will store. That is deliberate rather than an oversight — a name is
+letters, and the characters people use to decorate one are the same ones used to
+forge one, by making a name look like an email address on somebody else&rsquo;s screen.</p><p><em>Where you find out.</em> Since September 2026 the app tells you while you are
+typing, on the setup screen when you first install it and on your profile
+afterwards. It does not wait for a sync to fail.</p><p><em>What it tells you depends on whether you can see the character</em>, and this is the
+useful part:</p><ul><li><em>If you can see it</em> — a bracket, an at-sign, an emoji — the message quotes the
+character back at you and lists what a name may contain. Delete that character.</li><li><em>If you cannot see it</em> — a zero-width or formatting character, which is
+essentially always something that came in on a paste from a web page or a
+spreadsheet — the message names its code point and tells you to
+<b class=app-string>Delete the whole field and type it again</b>
+. It deliberately does
+<em>not</em> say that for a visible character, because retyping a bracket you typed on
+purpose gets you the same refusal.</li></ul><p><em>If it is already saved.</em> A name that was legal when you typed it and is not now
+is held back at sync rather than lost. Your record stays on your device exactly
+as it is, the sync screen lists it, and correcting the name on your profile
+sends it on its own. A teammate whose name is refused is simply <em>absent</em> on your
+device until they correct it — their bearings are unaffected, because a name and
+an observation are different records.</p><h2 id=the-one-thing-to-actually-worry-about>The one thing to actually worry about</h2><p>Records that have never synced exist in exactly one place: that phone. The
+<b class=app-string>Sync Status</b>
+screen says so in as many words —
+<b class=app-string>They exist only here until they sync — keep this device backed up until they do.</b></p><p>If you are going to be out of signal for a week with a phone full of the only
+copy of a fortnight&rsquo;s bearings, take a backup file off it. That is on the
+<a href=../getting-your-data-out/>getting your data out</a> page.</p><h2 id=what-sync-cannot-do>What sync cannot do</h2><p><em>It cannot run while the app is closed.</em> Not at any setting. A phone in a pack
+syncs nothing, however good the signal is, until somebody opens the app.</p><p><em>It cannot tell you anything when you are not looking.</em> There are no
+notifications of any kind. The bar is the whole of the telling and you see it when
+you next open the app.</p><h2 id=on-a-mac>On a Mac</h2><p>The same bar and the same screen. There are no desktop pictures in this guide yet.</p></article></main><footer class=site><p>TriTrack — radio-telemetry field data collection.</p></footer></body></html>
