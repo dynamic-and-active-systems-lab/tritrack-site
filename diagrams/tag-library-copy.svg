@@ -1,0 +1,59 @@
+<svg width="322pt" height="444pt"
+ viewBox="0.00 0.00 322.00 444.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 440)">
+<title>TagLibraryCopy</title>
+<!-- library -->
+<g id="node1" class="node highlight">
+<title>library</title>
+<path fill="none" stroke="black" d="M236,-436C236,-436 12,-436 12,-436 6,-436 0,-430 0,-424 0,-424 0,-400 0,-400 0,-394 6,-388 12,-388 12,-388 236,-388 236,-388 242,-388 248,-394 248,-400 248,-400 248,-424 248,-424 248,-430 242,-436 236,-436"/>
+<text text-anchor="middle" x="124" y="-415.6" font-family="Helvetica,Arial,sans-serif" font-size="13.00">Tag Library</text>
+<text text-anchor="middle" x="124" y="-401.6" font-family="Helvetica,Arial,sans-serif" font-size="13.00">your device&#39;s own list — never syncs</text>
+</g>
+<!-- projectA -->
+<g id="node2" class="node">
+<title>projectA</title>
+<path fill="none" stroke="black" d="M197.5,-326C197.5,-326 50.5,-326 50.5,-326 44.5,-326 38.5,-320 38.5,-314 38.5,-314 38.5,-290 38.5,-290 38.5,-284 44.5,-278 50.5,-278 50.5,-278 197.5,-278 197.5,-278 203.5,-278 209.5,-284 209.5,-290 209.5,-290 209.5,-314 209.5,-314 209.5,-320 203.5,-326 197.5,-326"/>
+<text text-anchor="middle" x="124" y="-305.6" font-family="Helvetica,Arial,sans-serif" font-size="13.00">Project A&#39;s tag</text>
+<text text-anchor="middle" x="124" y="-291.6" font-family="Helvetica,Arial,sans-serif" font-size="13.00">its own row, own history</text>
+</g>
+<!-- library&#45;&gt;projectA -->
+<g id="edge1" class="edge">
+<title>library&#45;&gt;projectA</title>
+<path fill="none" stroke="black" d="M124,-387.83C124,-372.88 124,-353.2 124,-336.55"/>
+<polygon fill="black" stroke="black" points="127.5,-336.13 124,-326.13 120.5,-336.13 127.5,-336.13"/>
+<text text-anchor="middle" x="165.5" y="-354.2" font-family="Helvetica,Arial,sans-serif" font-size="11.00">Copy from library</text>
+</g>
+<!-- projectB -->
+<g id="node3" class="node">
+<title>projectB</title>
+<path fill="none" stroke="black" d="M197.5,-227C197.5,-227 50.5,-227 50.5,-227 44.5,-227 38.5,-221 38.5,-215 38.5,-215 38.5,-191 38.5,-191 38.5,-185 44.5,-179 50.5,-179 50.5,-179 197.5,-179 197.5,-179 203.5,-179 209.5,-185 209.5,-191 209.5,-191 209.5,-215 209.5,-215 209.5,-221 203.5,-227 197.5,-227"/>
+<text text-anchor="middle" x="124" y="-206.6" font-family="Helvetica,Arial,sans-serif" font-size="13.00">Project B&#39;s tag</text>
+<text text-anchor="middle" x="124" y="-192.6" font-family="Helvetica,Arial,sans-serif" font-size="13.00">its own row, own history</text>
+</g>
+<!-- library&#45;&gt;projectB -->
+<g id="edge3" class="edge">
+<title>library&#45;&gt;projectB</title>
+<path fill="none" stroke="black" d="M184.34,-387.94C195.77,-381.31 206.73,-373.08 215,-363 225.88,-349.74 223.53,-342.98 226,-326 229.07,-304.89 235.69,-297 226,-278 216.39,-259.16 199.49,-243.99 182.18,-232.42"/>
+<polygon fill="black" stroke="black" points="184,-229.42 173.68,-227.02 180.25,-235.33 184,-229.42"/>
+<text text-anchor="middle" x="272.5" y="-299.2" font-family="Helvetica,Arial,sans-serif" font-size="11.00">Copy from library</text>
+</g>
+<!-- projectA&#45;&gt;projectB -->
+<!-- note -->
+<g id="node4" class="node note">
+<title>note</title>
+<polygon fill="none" stroke="black" points="221,-128 21,-128 21,0 227,0 227,-122 221,-128"/>
+<polyline fill="none" stroke="black" points="221,-128 221,-122 "/>
+<polyline fill="none" stroke="black" points="227,-122 221,-122 "/>
+<text text-anchor="start" x="35" y="-109.2" font-family="Helvetica,Arial,sans-serif" font-size="11.00">A copy is a separate row from the</text>
+<text text-anchor="start" x="35" y="-97.2" font-family="Helvetica,Arial,sans-serif" font-size="11.00">moment it&#39;s made. Editing the library</text>
+<text text-anchor="start" x="35" y="-85.2" font-family="Helvetica,Arial,sans-serif" font-size="11.00">never reaches a project&#39;s copy on its</text>
+<text text-anchor="start" x="35" y="-73.2" font-family="Helvetica,Arial,sans-serif" font-size="11.00">own — &quot;Apply this to your projects?&quot;</text>
+<text text-anchor="start" x="35" y="-61.2" font-family="Helvetica,Arial,sans-serif" font-size="11.00">after a library edit is asked every</text>
+<text text-anchor="start" x="35" y="-49.2" font-family="Helvetica,Arial,sans-serif" font-size="11.00">time, and only an owner can accept it</text>
+<text text-anchor="start" x="35" y="-37.2" font-family="Helvetica,Arial,sans-serif" font-size="11.00">for their project. Editing a project&#39;s</text>
+<text text-anchor="start" x="35" y="-25.2" font-family="Helvetica,Arial,sans-serif" font-size="11.00">copy never reaches the library or any</text>
+<text text-anchor="start" x="35" y="-13.2" font-family="Helvetica,Arial,sans-serif" font-size="11.00">other project either way.</text>
+</g>
+<!-- projectB&#45;&gt;note -->
+</g>
+</svg>

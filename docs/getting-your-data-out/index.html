@@ -1,0 +1,48 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>Getting your data out · TriTrack</title><meta name=description content="Exporting a project's records as spreadsheets, taking a backup file off the phone, and sending one record to somebody."><link rel=stylesheet href=/tritrack-site/style.css></head><body><header class=site><a class=brand href=/tritrack-site/>TriTrack</a><nav><a href=/tritrack-site/how-it-works/>How it works</a><a href=/tritrack-site/docs/>Guide</a><a href=/tritrack-site/support/>Support</a><a href=/tritrack-site/privacy/>Privacy</a></nav></header><main><article class=prose><h1>Getting your data out</h1><p>A spreadsheet is for analysis; a backup file moves a whole project or keeps a
+second copy of it. Both are under <b class=app-string>More</b>
+→
+<b class=app-string>Data Export / Backup</b>
+, and any role, viewers included, can use
+both.</p><div class=shots><figure class=shot><img src=/tritrack-site/screens/iphone-6.9/more.png alt="Data Export / Backup is on the More tab, near the bottom." loading=lazy><figcaption>Data Export / Backup is on the More tab, near the bottom.</figcaption></figure><figure class=shot><img src=/tritrack-site/screens/iphone-6.9/data-export.png alt="Both exports on one screen. The backup is the whole project; the spreadsheet is filtered by tag or by date." loading=lazy><figcaption>Both exports on one screen. The backup is the whole project; the spreadsheet is filtered by tag or by date.</figcaption></figure></div><h2 id=spreadsheets>Spreadsheets</h2><p>Optionally filter by one tag or a date range, then tap
+<b class=app-string>Export CSV</b>
+and choose where to save. You get one zip file named
+for the project and the date, holding:</p><ul><li><code>observations.csv</code>: one row per bearing, with time, position, magnetic and
+true bearing, uncertainty, quality, observer and notes;</li><li><code>non_detections.csv</code> and <code>truth_points.csv</code>, when the project has any
+no-signal records or <a href=../truth-points/>truth points</a>;</li><li><code>tags.csv</code>, <code>individuals.csv</code> and <code>deployments.csv</code>: the tags, the animals,
+and which tag was on which animal when.</li></ul><p>The message afterwards counts what it wrote (observations, non-detections,
+truth points, tags, animals); a kind not mentioned had nothing in it.</p><p><em>Tag columns come in pairs:</em> what the tag was called and tuned to when the
+bearing was taken, and what it is now, so a mid-season retune stays visible. A
+bearing too old to know what it was recorded against leaves the first pair
+empty rather than filling in today&rsquo;s values, and a column says so.</p><h2 id=a-backup-of-the-whole-project>A backup of the whole project</h2><p><b class=app-string>Export project backup (.zip)</b>
+writes everything in the project
+(records, tags, people, map extent) into one small file you can send or store
+anywhere.</p><p><b class=app-string>Import backup</b>
+reads one back in. It adds to and corrects the
+project rather than replacing it; anything it would overwrite is listed, old
+value and new, before you agree. You need write access to the project.</p><h2 id=sending-one-record>Sending one record</h2><p><em>To someone using TriTrack:</em> on the <b class=app-string>Log</b>
+tab, a row&rsquo;s ⋮ menu has
+<b class=app-string>Share observation…</b>
+, which copies a block of text. They open
+<b class=app-string>More</b>
+→ <b class=app-string>Observation Sharing</b>
+,
+<b class=app-string>Paste from clipboard</b>
+, <b class=app-string>Parse</b>
+, and see it before
+anything is saved.</p><figure class=shot><img src=/tritrack-site/screens/iphone-6.9/paste-preview.png alt="The preview after pasting a colleague's bearing. Nothing is stored yet; this is the screen for deciding whether it is the record you were expecting and which of your own tags it belongs to." loading=lazy><figcaption>The preview after pasting a colleague's bearing. Nothing is stored yet; this is the screen for deciding whether it is the record you were expecting and which of your own tags it belongs to.</figcaption></figure><p>The card names who took the record (not who forwarded it) and whether the tag
+details are as recorded at the time or as they read on the sender&rsquo;s phone
+today, which matters if the tag was retuned.</p><p><em>To someone who is not:</em> tap a bearing, estimate or truth point on the map and
+use the share menu on its card. <b class=app-string>Copy coordinates</b>
+copies the
+position, <b class=app-string>Open in Maps</b>
+hands it to the phone&rsquo;s maps app, and
+<b class=app-string>Share…</b>
+sends a <code>.gpx</code> waypoint that a handheld GPS, Gaia or
+CalTopo can read. A bearing&rsquo;s card also has <b class=app-string>Copy for TriTrack</b>
+.</p><p>None of this is sync: it goes only to the person you send it to.</p><h2 id=back-up-what-has-not-synced>Back up what has not synced</h2><p>Unsynced records exist only on that phone. When working out of signal for days,
+take a backup file off it every few days and put it somewhere else; it takes
+seconds. <b class=app-string>Sync Status</b>
+shows how many records are waiting
+(<a href=../sync/>sync</a>).</p><h2 id=on-a-mac>On a Mac</h2><p>The same screen and buttons, with the ordinary macOS save dialog, which is
+handy when the file is going straight into an analysis. There are no desktop
+pictures in this guide yet.</p></article></main><footer class=site><p>TriTrack — radio-telemetry field data collection.</p></footer></body></html>

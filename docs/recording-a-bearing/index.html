@@ -1,0 +1,124 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>Recording a bearing · TriTrack</title><meta name=description content="The core of the app: point the antenna, take the bearing, save it."><link rel=stylesheet href=/tritrack-site/style.css></head><body><header class=site><a class=brand href=/tritrack-site/>TriTrack</a><nav><a href=/tritrack-site/how-it-works/>How it works</a><a href=/tritrack-site/docs/>Guide</a><a href=/tritrack-site/support/>Support</a><a href=/tritrack-site/privacy/>Privacy</a></nav></header><main><article class=prose><h1>Recording a bearing</h1><p>Pick the tag, point the antenna, take the bearing, save.</p><figure class=shot><img src=/tritrack-site/screens/iphone-6.9/record.png alt="The Record tab, ready to take a bearing. The round button with a map on it, beside RANGE, is Take on map." loading=lazy><figcaption>The Record tab, ready to take a bearing. The round button with a map on it, beside RANGE, is Take on map.</figcaption></figure><p><em>The pictures on this page are of a device with no project server, so there is
+no sync mark on them; the <a href=../sync/>sync</a> page shows what one looks like.</em></p><h2 id=choose-the-record-type>Choose the record type</h2><p>The icons along the top pick it; only the selected one shows its name.
+<b class=app-string>Bearing</b>
+is a direction to one animal, and most of this page is
+about it. The others:</p><ul><li><b class=app-string>Omni</b>
+: heard on an omnidirectional antenna, no direction.</li><li><b class=app-string>Note</b>
+: something worth writing down here and now that is not a
+detection.</li><li><b class=app-string>No Signal</b>
+: you listened for these frequencies here and heard
+nothing. Record it: it is evidence about where the animal was not.</li><li><b class=app-string>Truth</b>
+: you found the animal or the tag, and this is where it
+was. See <a href=../truth-points/>truth points</a>.</li></ul><h2 id=pick-the-tag>Pick the tag</h2><p>Spin the wheel to the tag you are hearing. It lists only tags on an animal
+right now, each as its frequency and the animal&rsquo;s name. The two-icon switch beside
+it sorts by frequency or by animal, and the phone remembers your choice.</p><p>If the tag you are hearing is not there, scroll to
+<b class=app-string>＋ Add new tag</b>
+at the bottom of the wheel. It asks for a
+<b class=app-string>Tag ID</b>
+, a <b class=app-string>Frequency (MHz)</b>
+and an
+<b class=app-string>Animal name</b>
+, and
+<b class=app-string>Adds the tag to the Tag Library and the animal under Animals, wearing it from today.</b>
+For a tag already in your library, link it instead, under
+<a href=../managing-your-tags/#putting-a-tag-on-an-animal>putting a tag on an animal</a>.</p><p>With no tag on any animal, the wheel is replaced by
+<b class=app-string>No tag is on an animal today</b>
+(or
+<b class=app-string>No tags in this project yet</b>
+) and a <b class=app-string>+ Quick-add tag</b>
+button. A viewer cannot add tags and is told so:
+<b class=app-string>Viewers cannot create tags</b>
+.</p><h2 id=take-the-bearing>Take the bearing</h2><p>Point the antenna; the number shown is the phone&rsquo;s live magnetic heading. Then:</p><ul><li><b class=app-string>POINT</b>
+: tap when the signal peaks. Tap again to clear it.</li><li><b class=app-string>RANGE</b>
+: hold it while you sweep from one edge of the signal to
+the other, then let go. The middle of the sweep is the bearing and its width
+is the uncertainty. Use it on a broad peak; a point tap records a fixed
+uncertainty instead.</li></ul><p>The pencil beside the number types a bearing in by hand, for a hand-compass
+reading or a notebook. On a device with no compass it reads
+<b class=app-string>Manual entry</b>
+, and the screen says
+<b class=app-string>No compass on this device — enter the bearing manually above.</b></p><p>Bearings are stored as magnetic; true north is on <a href=#the-compass-tab>the compass tab</a>.</p><h3 id=taking-the-range-on-a-map>Taking the range on a map</h3><p><b class=app-string>Take on map</b>
+, the round map button beside RANGE, does the same
+sweep on a map, so you can see whether it crosses your earlier bearings before
+you accept it.</p><div class=shots><figure class=shot><img src=/tritrack-site/screens/iphone-6.9/take-on-map.png alt="Take on map before a sweep. The two lines with fainter wedges are today's earlier bearings on this tag, drawn out to the edge; the dashed line is where the phone points now, and the large number is its heading. The heading is scripted: a simulator has no compass." loading=lazy><figcaption>Take on map before a sweep. The two lines with fainter wedges are today's earlier bearings on this tag, drawn out to the edge; the dashed line is where the phone points now, and the large number is its heading. The heading is scripted: a simulator has no compass.</figcaption></figure><figure class=shot><img src=/tritrack-site/screens/iphone-6.9/take-on-map-released.png alt="The same screen after the sweep is let go. The wide wedge is the sweep, the number is what it read, and the three buttons wait for you. Here the sweep crosses both earlier bearings, which is what the screen is for." loading=lazy><figcaption>The same screen after the sweep is let go. The wide wedge is the sweep, the number is what it read, and the three buttons wait for you. Here the sweep crosses both earlier bearings, which is what the screen is for.</figcaption></figure></div><p>It draws today&rsquo;s earlier bearings on the selected tag, from everyone on the
+project. Other tags, earlier days, records with no direction, deleted ones, and
+bearings from before the tag moved to this animal are left out. With no tag
+selected it says <b class=app-string>No tag selected, so no earlier bearings are shown.</b></p><p>Hold <b class=app-string>HOLD TO SWEEP</b>
+and turn across the signal; the map ignores
+touches while you hold. Let go and the reading appears, for example
+<em>115° ± 15°</em>. A sweep of 180° or more warns that the middle may be the wrong
+way round. Then:</p><ul><li><b class=app-string>Confirm</b>
+puts the bearing in the form and closes the map. <em>It
+does not save.</em> <b class=app-string>SAVE OBSERVATION</b>
+still does that.</li><li><b class=app-string>Retake</b>
+discards the sweep.</li><li><b class=app-string>Cancel</b>
+(or back) leaves the form as it was.</li></ul><p>The button at the bottom right switches <b class=app-string>North up</b>
+and
+<b class=app-string>Facing up</b>
+(the map turns with the phone), and the phone remembers
+which. Dragging the map pauses the turning until you tap
+<b class=app-string>Back to me</b>
+; if the compass is disturbed the map stops turning and
+says so. While the map is turned a small north arrow shows; tap it to return
+to north up. The <b class=app-string>Terrain</b>
+/ <b class=app-string>Street</b>
+/
+<b class=app-string>Satellite</b>
+switch is shared with the Map tab. Like RANGE, the
+button is hidden on a device with no compass.</p><h2 id=say-how-good-it-was>Say how good it was</h2><p>Three wheels under the bearing, one flick each:</p><ul><li><b class=app-string>QUALITY</b>
+: how much you trust the direction.
+<b class=app-string>✓ Good</b>
+, <b class=app-string>Fair</b>
+, or <b class=app-string>Bounce?</b>
+for one you
+think came off a ridge or a building. Weeks later this tells you which ray to
+doubt.</li><li><b class=app-string>MODE</b>
+: which of the tag&rsquo;s pulse modes you heard. The modes are
+whatever was named when the tag was entered; the line under the wheels spells
+out the one picked, with its rate.</li><li><b class=app-string>STRENGTH</b>
+: how loud, from <b class=app-string>Faint</b>
+to
+<b class=app-string>V. strong</b>
+. It is about distance, not direction quality: a faint
+signal can give a clean bearing and a strong one can bounce.</li></ul><p><em>When the tag itself sounds wrong</em>, for example an irregular pulse, tick
+<b class=app-string>Malfunctioning</b>
+beside the mode line. <b class=app-string>Bounce?</b>
+means
+<em>I do not trust this direction</em>; <b class=app-string>Malfunctioning</b>
+means <em>I do not
+trust this tag</em>. Several on different days are what would justify replacing it.
+The box does not take the bearing out of estimates; that is done on the
+<a href=../estimating-a-position/>Position tab or in the Log</a>.</p><h2 id=where-you-were>Where you were</h2><p>The row above the notes shows the GPS position the record will carry, or that
+there is no fix yet. <b class=app-string>Preview/Set</b>
+shows it on the map and lets you
+place the pin by hand, for example under a canyon wall.</p><h2 id=notes-and-advanced>Notes and Advanced</h2><p><b class=app-string>Notes (optional)</b>
+is free text. <b class=app-string>Advanced</b>
+folds away
+the bearing method, antenna type and receiver gain, which most people set once
+a season.</p><h2 id=writing-a-note>Writing a note</h2><p>On a <b class=app-string>Note</b>
+the text is the record, so the box fills the screen.
+It carries only the position and time besides, and saves with
+<b class=app-string>SAVE NOTE</b>
+.</p><figure class=shot><img src=/tritrack-site/screens/iphone-6.9/record-note.png alt="A Note before you start typing. The box takes every pixel left between the position row and the save bar." loading=lazy><figcaption>A Note before you start typing. The box takes every pixel left between the position row and the save bar.</figcaption></figure><p>Once you type, the box settles to eight lines above the keyboard and the form
+scrolls. (No picture: the screenshot tool cannot raise a keyboard.) Tapping
+away keeps every word.</p><h2 id=save-it>Save it</h2><p>Tap <b class=app-string>SAVE OBSERVATION</b>
+. On a bearing it stays gray until a bearing
+is taken, which is why it is gray in the picture above. With no position it
+does not guess:
+<b class=app-string>No GPS fix yet — use manual pin instead.</b></p><p>The screen keeps your unsaved entry if you leave and come back. A saved record
+is on this phone at once; <a href=../sync/>sync</a> sends it to the team when there is a
+connection.</p><h2 id=the-compass-tab>The compass tab</h2><figure class=shot><img src=/tritrack-site/screens/iphone-6.9/compass.png alt="The compass tab. The bubble at the top right turns green when the phone is level. The heading here is a fixed 47°, because the simulator that makes these pictures has no compass." loading=lazy><figcaption>The compass tab. The bubble at the top right turns green when the phone is level. The heading here is a fixed 47°, because the simulator that makes these pictures has no compass.</figcaption></figure><p>It is for pointing, not recording:
+<b class=app-string>To capture and save a bearing, use the Record tab.</b></p><ul><li><b class=app-string>LEVEL</b>
+turns green when the phone is flat enough. A tilted phone
+reads a wrong heading.</li><li><b class=app-string>True North</b>
+and <b class=app-string>Declination</b>
+need a position fix
+and show a dash until one arrives. <b class=app-string>Adjust</b>
+overrides the
+declination, for example to match a published value or an older dataset.
+Recorded bearings stay magnetic either way.</li><li><b class=app-string>⟲ Calibrate (figure-8)</b>
+: wave the phone in a figure of eight
+when the heading drifts or the app warns of interference (a truck, a metal
+gate, a radio).</li></ul><h2 id=on-a-mac>On a Mac</h2><p>A Mac has no compass, so bearings are typed with <b class=app-string>Manual entry</b>
+.
+Everything else is the same. There are no desktop pictures in this guide yet.</p></article></main><footer class=site><p>TriTrack — radio-telemetry field data collection.</p></footer></body></html>
