@@ -1,0 +1,52 @@
+<svg width="175pt" height="308pt"
+ viewBox="0.00 0.00 175.00 308.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 304)">
+<title>JoinRequest</title>
+<!-- ask -->
+<g id="node1" class="node">
+<title>ask</title>
+<path fill="none" stroke="black" d="M138,-300C138,-300 29,-300 29,-300 23,-300 17,-294 17,-288 17,-288 17,-264 17,-264 17,-258 23,-252 29,-252 29,-252 138,-252 138,-252 144,-252 150,-258 150,-264 150,-264 150,-288 150,-288 150,-294 144,-300 138,-300"/>
+<text text-anchor="middle" x="83.5" y="-279.6" font-family="Helvetica,Arial,sans-serif" font-size="13.00">You</text>
+<text text-anchor="middle" x="83.5" y="-265.6" font-family="Helvetica,Arial,sans-serif" font-size="13.00">ask with the code</text>
+</g>
+<!-- waiting -->
+<g id="node2" class="node wait">
+<title>waiting</title>
+<path fill="none" stroke="black" d="M155,-216C155,-216 12,-216 12,-216 6,-216 0,-210 0,-204 0,-204 0,-180 0,-180 0,-174 6,-168 12,-168 12,-168 155,-168 155,-168 161,-168 167,-174 167,-180 167,-180 167,-204 167,-204 167,-210 161,-216 155,-216"/>
+<text text-anchor="middle" x="83.5" y="-195.6" font-family="Helvetica,Arial,sans-serif" font-size="13.00">Nothing on your device</text>
+<text text-anchor="middle" x="83.5" y="-181.6" font-family="Helvetica,Arial,sans-serif" font-size="13.00">changes yet</text>
+</g>
+<!-- ask&#45;&gt;waiting -->
+<g id="edge1" class="edge">
+<title>ask&#45;&gt;waiting</title>
+<path fill="none" stroke="black" d="M83.5,-251.72C83.5,-243.78 83.5,-234.73 83.5,-226.16"/>
+<polygon fill="black" stroke="black" points="87,-226.05 83.5,-216.05 80,-226.05 87,-226.05"/>
+</g>
+<!-- decide -->
+<g id="node3" class="node">
+<title>decide</title>
+<path fill="none" stroke="black" d="M143,-132C143,-132 24,-132 24,-132 18,-132 12,-126 12,-120 12,-120 12,-96 12,-96 12,-90 18,-84 24,-84 24,-84 143,-84 143,-84 149,-84 155,-90 155,-96 155,-96 155,-120 155,-120 155,-126 149,-132 143,-132"/>
+<text text-anchor="middle" x="83.5" y="-111.6" font-family="Helvetica,Arial,sans-serif" font-size="13.00">An owner</text>
+<text text-anchor="middle" x="83.5" y="-97.6" font-family="Helvetica,Arial,sans-serif" font-size="13.00">approves or rejects</text>
+</g>
+<!-- waiting&#45;&gt;decide -->
+<g id="edge2" class="edge">
+<title>waiting&#45;&gt;decide</title>
+<path fill="none" stroke="black" d="M83.5,-167.72C83.5,-159.78 83.5,-150.73 83.5,-142.16"/>
+<polygon fill="black" stroke="black" points="87,-142.05 83.5,-132.05 80,-142.05 87,-142.05"/>
+</g>
+<!-- arrive -->
+<g id="node4" class="node">
+<title>arrive</title>
+<path fill="none" stroke="black" d="M150,-48C150,-48 17,-48 17,-48 11,-48 5,-42 5,-36 5,-36 5,-12 5,-12 5,-6 11,0 17,0 17,0 150,0 150,0 156,0 162,-6 162,-12 162,-12 162,-36 162,-36 162,-42 156,-48 150,-48"/>
+<text text-anchor="middle" x="83.5" y="-27.6" font-family="Helvetica,Arial,sans-serif" font-size="13.00">Your device finds out,</text>
+<text text-anchor="middle" x="83.5" y="-13.6" font-family="Helvetica,Arial,sans-serif" font-size="13.00">next time it checks</text>
+</g>
+<!-- decide&#45;&gt;arrive -->
+<g id="edge3" class="edge">
+<title>decide&#45;&gt;arrive</title>
+<path fill="none" stroke="black" d="M83.5,-83.72C83.5,-75.78 83.5,-66.73 83.5,-58.16"/>
+<polygon fill="black" stroke="black" points="87,-58.05 83.5,-48.05 80,-58.05 87,-58.05"/>
+</g>
+</g>
+</svg>

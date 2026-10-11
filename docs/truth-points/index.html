@@ -1,0 +1,68 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>Truth points · TriTrack</title><meta name=description content="Recording where the animal or the tag actually turned out to be, correcting one afterwards, and what comes out in the export."><link rel=stylesheet href=/tritrack-site/style.css></head><body><header class=site><a class=brand href=/tritrack-site/>TriTrack</a><nav><a href=/tritrack-site/how-it-works/>How it works</a><a href=/tritrack-site/docs/>Guide</a><a href=/tritrack-site/support/>Support</a><a href=/tritrack-site/privacy/>Privacy</a></nav></header><main><article class=prose><h1>Truth points</h1><p>A truth point records where somebody physically found the animal, the tag, or
+both. It is the yardstick for checking estimates against, so it never feeds an
+estimate itself: TriTrack keeps it apart from bearings.</p><h2 id=recording-one>Recording one</h2><figure class=shot><img src=/tritrack-site/screens/iphone-6.9/record-truth.png alt="The record screen with the Truth tab chosen. What was found and the precision are the two fields that decide what the point means." loading=lazy><figcaption>The record screen with the Truth tab chosen. What was found and the precision are the two fields that decide what the point means.</figcaption></figure><p>On the Record tab, pick <b class=app-string>Truth</b>
+and the tag. Then two fields:</p><ul><li><em><b class=app-string>WHAT WAS FOUND</b>
+</em>: <b class=app-string>Animal + tag</b>
+,
+<b class=app-string>Animal only</b>
+or <b class=app-string>Tag only</b>
+. As the screen says,
+<b class=app-string>Only "animal + tag" checks a bearing estimate of a live tagged animal. A tag on its own may have been shed.</b></li><li><em><b class=app-string>PRECISION</b>
+</em>: a radius in meters, required.
+<b class=app-string>SAVE TRUTH POINT</b>
+stays gray until it is above zero. On a GPS
+fix it is prefilled from the phone&rsquo;s accuracy, with
+<b class=app-string>Raise or lower it if you know better.</b>
+You often do: standing
+over the tag with it in your hand, type over the phone&rsquo;s ±12 m. For a pin
+placed on the map nothing is prefilled:
+<b class=app-string>Not prefilled for a map pin: a pin is only as precise as your placing of it, and imagery can be off by a few meters.</b></li></ul><p><b class=app-string>Notes (optional) — e.g. found in burrow</b>
+is for what you saw.
+<b class=app-string>Preview/Set</b>
+places the pin somewhere you could see but not stand,
+which is common here.</p><h2 id=where-they-show-up>Where they show up</h2><ul><li><em>Map</em>: a small square in the animal&rsquo;s color, labeled from
+<b class=app-string>Truth</b>
+with the tag&rsquo;s name and frequency (an estimate&rsquo;s label
+starts <b class=app-string>Estimate</b>
+). Tap it for the panel below.</li><li><em>Log</em> (<b class=app-string>More</b>
+→ <b class=app-string>Log</b>
+): a row starting
+<b class=app-string>📍 Truth point · </b>, with what was found, precision, finder and
+how the position was got.</li><li><em>Export</em>: its own file; see <a href=#what-comes-out-in-the-export>below</a>.</li></ul><h2 id=the-panel-on-the-map>The panel on the map</h2><figure class=shot><img src=/tritrack-site/screens/iphone-6.9/truth-point-panel.png alt="Tapping a truth point on the map. Everything that decides whether the point can be used is on the panel: what was found, the precision, how the position was got, and who found it." loading=lazy><figcaption>Tapping a truth point on the map. Everything that decides whether the point can be used is on the panel: what was found, the precision, how the position was got, and who found it.</figcaption></figure><ul><li>What was found and the precision, side by side, because each means little
+alone.</li><li><b class=app-string>Position: </b>one of <b class=app-string>GPS fix</b>
+,
+<b class=app-string>Placed by hand on the map</b>
+, <b class=app-string>Entered by hand</b>
+or
+<b class=app-string>GPS fix, later moved by hand</b>
+.</li><li><b class=app-string>Found by: </b>the person who recorded it, not whoever last
+corrected it.</li></ul><p>An older point missing any of these says <b class=app-string>not recorded</b>
+rather than
+going blank, so nobody assumes a GPS fix or an animal-and-tag find.
+<b class=app-string>Navigate</b>
+points the Compass tab at the point, with the distance.</p><h2 id=correcting-one>Correcting one</h2><figure class=shot><img src=/tritrack-site/screens/iphone-6.9/truth-point-edit.png alt="Correcting a truth point. The position, the precision and what was found can all be changed; who found it and when cannot." loading=lazy><figcaption>Correcting a truth point. The position, the precision and what was found can all be changed; who found it and when cannot.</figcaption></figure><p>Open it with <b class=app-string>Edit</b>
+on the map panel, or from the Log row&rsquo;s
+three-dot menu: <b class=app-string>Edit position / precision / what was found…</b></p><ul><li><em>Position</em>: <b class=app-string>Move on map…</b>
+and drag the pin, for a point recorded
+from a vehicle or across a fence. A moved GPS fix becomes
+<b class=app-string>GPS fix, later moved by hand</b>
+.</li><li><em>Precision</em>: if you moved the pin, the dialog warns the old figure was for
+the old spot.</li><li><em>What was found.</em></li></ul><p><em>Who found it</em> and <em>when</em> cannot be changed. Your name is still recorded
+against the edit.</p><h2 id=who-may-change-one>Who may change one</h2><p>Any contributor or owner may correct or delete <em>any</em> truth point, not only
+their own, because a wrong precision spoils everyone&rsquo;s accuracy check. A viewer
+sees <b class=app-string>Viewers cannot change or delete a truth point — ask an owner to change your role.</b>
+See <a href=../projects-members-and-roles/>roles</a>.</p><h2 id=deleting-one>Deleting one</h2><p><b class=app-string>Delete</b>
+is beside <b class=app-string>Edit</b>
+on the panel and in the Log
+menu. It asks first:
+<b class=app-string>Where the animal or tag was actually found cannot be re-measured from your desk.</b>
+<b class=app-string>Deleting removes it from accuracy checks, the map, the Log and the CSV export, on every device once they sync.</b>
+<b class=app-string>You can undo it straight after.</b>
+The undo restores the same point,
+with its finder and history.</p><h2 id=what-comes-out-in-the-export>What comes out in the export</h2><p>The CSV export is one zip, and a project with truth points gets a
+<code>truth_points.csv</code> in it, one row per point. The columns to know:</p><ul><li><code>found_kind</code>: <code>animal_and_collar</code>, <code>animal_only</code> or <code>collar_only</code>. Filter on
+this before computing anything.</li><li><code>precision_m</code>: the radius; never empty.</li><li><code>position_source</code>: <code>gps_fix</code>, <code>manual_pin</code>, <code>gps_fix_adjusted</code> or
+<code>manual_entry</code> (empty for points older than the field). It tells measurements
+from map readings.</li><li><code>found_by</code>: the finder&rsquo;s name. Empty means none was recorded; it is never
+filled from the last editor.</li><li>Paired tag columns: the tag&rsquo;s name and frequency when the point was taken,
+and now.</li></ul><p>More on <a href=../getting-your-data-out/>getting your data out</a>.</p></article></main><footer class=site><p>TriTrack — radio-telemetry field data collection.</p></footer></body></html>

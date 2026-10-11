@@ -1,0 +1,126 @@
+<svg width="257pt" height="804pt"
+ viewBox="0.00 0.00 257.00 804.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 800)">
+<title>TrashMoveRestore</title>
+<!-- move -->
+<g id="node1" class="node highlight">
+<title>move</title>
+<path fill="none" stroke="black" d="M213,-796C213,-796 36,-796 36,-796 30,-796 24,-790 24,-784 24,-784 24,-772 24,-772 24,-766 30,-760 36,-760 36,-760 213,-760 213,-760 219,-760 225,-766 225,-772 225,-772 225,-784 225,-784 225,-790 219,-796 213,-796"/>
+<text text-anchor="start" x="37" y="-774.6" font-family="Helvetica,Arial,sans-serif" font-size="13.00">An owner taps Move to Trash</text>
+</g>
+<!-- ownerPhone -->
+<g id="node2" class="node good">
+<title>ownerPhone</title>
+<path fill="none" stroke="black" d="M207,-733C207,-733 42,-733 42,-733 36,-733 30,-727 30,-721 30,-721 30,-689 30,-689 30,-683 36,-677 42,-677 42,-677 207,-677 207,-677 213,-677 219,-683 219,-689 219,-689 219,-721 219,-721 219,-727 213,-733 207,-733"/>
+<text text-anchor="start" x="43" y="-715.6" font-family="Helvetica,Arial,sans-serif" font-size="13.00">Owner&#39;s phone</text>
+<text text-anchor="start" x="43" y="-701.6" font-family="Helvetica,Arial,sans-serif" font-size="13.00">✓ records kept</text>
+<text text-anchor="start" x="43" y="-687.6" font-family="Helvetica,Arial,sans-serif" font-size="13.00"> &#160;&#160;the project is in the Trash</text>
+</g>
+<!-- move&#45;&gt;ownerPhone -->
+<g id="edge1" class="edge">
+<title>move&#45;&gt;ownerPhone</title>
+<path fill="none" stroke="black" d="M124.5,-759.81C124.5,-754.79 124.5,-749.08 124.5,-743.32"/>
+<polygon fill="black" stroke="black" points="128,-743 124.5,-733 121,-743 128,-743"/>
+</g>
+<!-- server -->
+<g id="node3" class="node good">
+<title>server</title>
+<path fill="none" stroke="black" d="M211,-639C211,-639 38,-639 38,-639 32,-639 26,-633 26,-627 26,-627 26,-595 26,-595 26,-589 32,-583 38,-583 38,-583 211,-583 211,-583 217,-583 223,-589 223,-595 223,-595 223,-627 223,-627 223,-633 217,-639 211,-639"/>
+<text text-anchor="start" x="39" y="-621.6" font-family="Helvetica,Arial,sans-serif" font-size="13.00">Server</text>
+<text text-anchor="start" x="39" y="-607.6" font-family="Helvetica,Arial,sans-serif" font-size="13.00">✓ records kept</text>
+<text text-anchor="start" x="39" y="-593.6" font-family="Helvetica,Arial,sans-serif" font-size="13.00"> &#160;&#160;hidden from every member</text>
+</g>
+<!-- ownerPhone&#45;&gt;server -->
+<g id="edge2" class="edge">
+<title>ownerPhone&#45;&gt;server</title>
+<path fill="none" stroke="black" d="M124.5,-676.89C124.5,-668.27 124.5,-658.57 124.5,-649.35"/>
+<polygon fill="black" stroke="black" points="128,-649.23 124.5,-639.23 121,-649.23 128,-649.23"/>
+<text text-anchor="middle" x="138.5" y="-655.2" font-family="Helvetica,Arial,sans-serif" font-size="11.00"> &#160;sync</text>
+</g>
+<!-- members -->
+<g id="node4" class="node good">
+<title>members</title>
+<path fill="none" stroke="black" d="M210,-545C210,-545 39,-545 39,-545 33,-545 27,-539 27,-533 27,-533 27,-487 27,-487 27,-481 33,-475 39,-475 39,-475 210,-475 210,-475 216,-475 222,-481 222,-487 222,-487 222,-533 222,-533 222,-539 216,-545 210,-545"/>
+<text text-anchor="start" x="40" y="-527.6" font-family="Helvetica,Arial,sans-serif" font-size="13.00">Each member&#39;s phone</text>
+<text text-anchor="start" x="40" y="-513.6" font-family="Helvetica,Arial,sans-serif" font-size="13.00">✓ records kept</text>
+<text text-anchor="start" x="40" y="-499.6" font-family="Helvetica,Arial,sans-serif" font-size="13.00"> &#160;&#160;the project is hidden, and</text>
+<text text-anchor="start" x="40" y="-485.6" font-family="Helvetica,Arial,sans-serif" font-size="13.00"> &#160;&#160;they are told who moved it</text>
+</g>
+<!-- server&#45;&gt;members -->
+<g id="edge3" class="edge">
+<title>server&#45;&gt;members</title>
+<path fill="none" stroke="black" d="M124.5,-582.95C124.5,-574.37 124.5,-564.65 124.5,-555.2"/>
+<polygon fill="black" stroke="black" points="128,-555.1 124.5,-545.1 121,-555.1 128,-555.1"/>
+<text text-anchor="middle" x="162.5" y="-561.2" font-family="Helvetica,Arial,sans-serif" font-size="11.00"> &#160;their next sync</text>
+</g>
+<!-- restore -->
+<g id="node5" class="node highlight">
+<title>restore</title>
+<path fill="none" stroke="black" d="M237,-448C237,-448 12,-448 12,-448 6,-448 0,-442 0,-436 0,-436 0,-424 0,-424 0,-418 6,-412 12,-412 12,-412 237,-412 237,-412 243,-412 249,-418 249,-424 249,-424 249,-436 249,-436 249,-442 243,-448 237,-448"/>
+<text text-anchor="start" x="13" y="-426.6" font-family="Helvetica,Arial,sans-serif" font-size="13.00">The owner taps Restore, in the Trash</text>
+</g>
+<!-- members&#45;&gt;restore -->
+<!-- server2 -->
+<g id="node6" class="node good">
+<title>server2</title>
+<path fill="none" stroke="black" d="M212.5,-385C212.5,-385 36.5,-385 36.5,-385 30.5,-385 24.5,-379 24.5,-373 24.5,-373 24.5,-341 24.5,-341 24.5,-335 30.5,-329 36.5,-329 36.5,-329 212.5,-329 212.5,-329 218.5,-329 224.5,-335 224.5,-341 224.5,-341 224.5,-373 224.5,-373 224.5,-379 218.5,-385 212.5,-385"/>
+<text text-anchor="start" x="37.5" y="-367.6" font-family="Helvetica,Arial,sans-serif" font-size="13.00">Server</text>
+<text text-anchor="start" x="37.5" y="-353.6" font-family="Helvetica,Arial,sans-serif" font-size="13.00">✓ back for every member</text>
+<text text-anchor="start" x="37.5" y="-339.6" font-family="Helvetica,Arial,sans-serif" font-size="13.00"> &#160;&#160;any countdown is canceled</text>
+</g>
+<!-- restore&#45;&gt;server2 -->
+<g id="edge5" class="edge">
+<title>restore&#45;&gt;server2</title>
+<path fill="none" stroke="black" d="M124.5,-411.81C124.5,-406.79 124.5,-401.08 124.5,-395.32"/>
+<polygon fill="black" stroke="black" points="128,-395 124.5,-385 121,-395 128,-395"/>
+</g>
+<!-- members2 -->
+<g id="node7" class="node good">
+<title>members2</title>
+<path fill="none" stroke="black" d="M211.5,-291C211.5,-291 37.5,-291 37.5,-291 31.5,-291 25.5,-285 25.5,-279 25.5,-279 25.5,-247 25.5,-247 25.5,-241 31.5,-235 37.5,-235 37.5,-235 211.5,-235 211.5,-235 217.5,-235 223.5,-241 223.5,-247 223.5,-247 223.5,-279 223.5,-279 223.5,-285 217.5,-291 211.5,-291"/>
+<text text-anchor="start" x="38.5" y="-273.6" font-family="Helvetica,Arial,sans-serif" font-size="13.00">Each phone</text>
+<text text-anchor="start" x="38.5" y="-259.6" font-family="Helvetica,Arial,sans-serif" font-size="13.00">✓ the project comes back by</text>
+<text text-anchor="start" x="38.5" y="-245.6" font-family="Helvetica,Arial,sans-serif" font-size="13.00"> &#160;&#160;itself at the next sync</text>
+</g>
+<!-- server2&#45;&gt;members2 -->
+<g id="edge6" class="edge">
+<title>server2&#45;&gt;members2</title>
+<path fill="none" stroke="black" d="M124.5,-328.89C124.5,-320.27 124.5,-310.57 124.5,-301.35"/>
+<polygon fill="black" stroke="black" points="128,-301.23 124.5,-291.23 121,-301.23 128,-301.23"/>
+<text text-anchor="middle" x="150.5" y="-307.2" font-family="Helvetica,Arial,sans-serif" font-size="11.00"> &#160;next sync</text>
+</g>
+<!-- left -->
+<g id="node8" class="node highlight">
+<title>left</title>
+<path fill="none" stroke="black" d="M227,-208C227,-208 22,-208 22,-208 16,-208 10,-202 10,-196 10,-196 10,-178 10,-178 10,-172 16,-166 22,-166 22,-166 227,-166 227,-166 233,-166 239,-172 239,-178 239,-178 239,-196 239,-196 239,-202 233,-208 227,-208"/>
+<text text-anchor="start" x="23" y="-190.6" font-family="Helvetica,Arial,sans-serif" font-size="13.00">A member who has left the project</text>
+<text text-anchor="start" x="23" y="-176.6" font-family="Helvetica,Arial,sans-serif" font-size="13.00">taps Move to Trash</text>
+</g>
+<!-- members2&#45;&gt;left -->
+<!-- leftPhone -->
+<g id="node9" class="node good">
+<title>leftPhone</title>
+<path fill="none" stroke="black" d="M223.5,-139C223.5,-139 25.5,-139 25.5,-139 19.5,-139 13.5,-133 13.5,-127 13.5,-127 13.5,-81 13.5,-81 13.5,-75 19.5,-69 25.5,-69 25.5,-69 223.5,-69 223.5,-69 229.5,-69 235.5,-75 235.5,-81 235.5,-81 235.5,-127 235.5,-127 235.5,-133 229.5,-139 223.5,-139"/>
+<text text-anchor="start" x="26.5" y="-121.6" font-family="Helvetica,Arial,sans-serif" font-size="13.00">Their phone only</text>
+<text text-anchor="start" x="26.5" y="-107.6" font-family="Helvetica,Arial,sans-serif" font-size="13.00">✓ records kept, in the Trash</text>
+<text text-anchor="start" x="26.5" y="-93.6" font-family="Helvetica,Arial,sans-serif" font-size="13.00"> &#160;&#160;nothing is sent; the server and</text>
+<text text-anchor="start" x="26.5" y="-79.6" font-family="Helvetica,Arial,sans-serif" font-size="13.00"> &#160;&#160;everybody else are unchanged</text>
+</g>
+<!-- left&#45;&gt;leftPhone -->
+<g id="edge8" class="edge">
+<title>left&#45;&gt;leftPhone</title>
+<path fill="none" stroke="black" d="M124.5,-165.98C124.5,-160.94 124.5,-155.33 124.5,-149.61"/>
+<polygon fill="black" stroke="black" points="128,-149.3 124.5,-139.3 121,-149.3 128,-149.3"/>
+</g>
+<!-- current -->
+<g id="node10" class="node note">
+<title>current</title>
+<polygon fill="none" stroke="black" points="233,-42 10,-42 10,0 239,0 239,-36 233,-42"/>
+<polyline fill="none" stroke="black" points="233,-42 233,-36 "/>
+<polyline fill="none" stroke="black" points="239,-36 233,-36 "/>
+<text text-anchor="start" x="23" y="-24.6" font-family="Helvetica,Arial,sans-serif" font-size="13.00">A current member who is not an</text>
+<text text-anchor="start" x="23" y="-10.6" font-family="Helvetica,Arial,sans-serif" font-size="13.00">owner sees Move to Trash grayed</text>
+</g>
+<!-- leftPhone&#45;&gt;current -->
+</g>
+</svg>
